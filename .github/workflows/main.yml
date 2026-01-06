@@ -7,7 +7,7 @@ on:
 
 env:
   AWS_REGION: ap-south-1
-  ECR_REPOSITORY: "public.ecr.aws/k6c3y2y2/docker"
+  ECR_REPOSITORY: "public.ecr.aws/o7y1g8s6/docker"
   IMAGE_TAG: "${{ github.run_number }}"
 
 jobs:
