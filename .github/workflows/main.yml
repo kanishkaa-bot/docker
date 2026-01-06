@@ -2,7 +2,7 @@ name: Build & Push Netflix Image to ECR
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 
 env:
@@ -21,7 +21,7 @@ jobs:
       - name: Login to Amazon ECR
         run: |
           set -e
-          aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/k6c3y2y2
+          aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/o7y1g8s6
 
       - name: Build Docker Image
         run: |
